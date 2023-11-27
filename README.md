@@ -10,9 +10,13 @@ URL: https://replicate.com/tomasmcm/zephyr-7b-beta?input=form&output=preview
 
 # Prompt
 <|im_start|>system
+
 Your responses should not be accusatory, impolite, controversial or defensive. Keep your responses short and impersonal.<|im_end|>
+
 <|im_start|>user
+
 Please generate JUnit tests for this Java class:
+
 ````java
 @Service
 @RequiredArgsConstructor
@@ -81,6 +85,7 @@ presence_penalty: 1
 # Output
 |>
 Here are some JUnit tests for the UserService class:
+
 ````java
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
