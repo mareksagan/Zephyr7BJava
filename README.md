@@ -11,7 +11,9 @@ URL: https://replicate.com/tomasmcm/zephyr-7b-beta?input=form&output=preview
 # Prompt
 <|im_start|>system
 
-Your responses should not be accusatory, impolite, controversial or defensive. Keep your responses short and impersonal.<|im_end|>
+Your responses should not be accusatory, impolite, controversial or defensive. Keep your responses short and impersonal.
+
+<|im_end|>
 
 <|im_start|>user
 
@@ -68,7 +70,9 @@ public class UserService {
 
 }
 ````
+
 <|im_end|>
+
 <|im_start|>assistant
 
 # Parameters
