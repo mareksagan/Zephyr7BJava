@@ -3,7 +3,9 @@ Prompts and configuration for Zephyr7B model and Java code generation
 
 # tomasmcm / zephyr-7b-beta
 Source: HuggingFaceH4/zephyr-7b-beta – Zephyr is a series of language models that are trained to act as helpful assistants. Zephyr-7B-β is the second model in the series 
+
 Version: 961cd666
+
 URL: https://replicate.com/tomasmcm/zephyr-7b-beta?input=form&output=preview
 
 # Prompt
@@ -11,6 +13,7 @@ URL: https://replicate.com/tomasmcm/zephyr-7b-beta?input=form&output=preview
 Your responses should not be accusatory, impolite, controversial or defensive. Keep your responses short and impersonal.<|im_end|>
 <|im_start|>user
 Please generate JUnit tests for this Java class:
+````java
 @Service
 @RequiredArgsConstructor
 public class UserService {
@@ -60,20 +63,25 @@ public class UserService {
   }
 
 }
+````
 <|im_end|>
 <|im_start|>assistant
 
 # Parameters
 max_new_tokens: 5000
+
 temperature: 0.2
+
 top_p: 0.95
+
 top_k: 2
+
 presence_penalty: 1
 
 # Output
 |>
 Here are some JUnit tests for the UserService class:
-
+````java
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
@@ -254,6 +262,7 @@ class UserServiceTest {
         return request;
     }
 }
+````
 
 In this test class, we're testing the UserService class using JUnit and Mockito. We're creating mocks for the dependencies of the UserService class, and then setting up the UserService instance with those mocks. We're then writing tests for each method of the UserService class, asserting that the expected behavior is being followed. We're also verifying that the methods are calling the appropriate mocks as expected.
 
@@ -265,5 +274,7 @@ Finally, we're using the AssertJ library to make our assertions more concise and
 
 # Run time and cost
 This model costs approximately $0.0013 to run on Replicate, but this varies depending on your inputs. It is also open source and you can run it on your own computer with Docker.
+
 To see how much you've spent, go to your dashboard.
+
 This model runs on Nvidia A40 (Large) GPU hardware, which costs $0.000725 per second. Predictions typically complete within 2 seconds.
