@@ -76,15 +76,15 @@ public class UserService {
 <|im_start|>assistant
 
 # Parameters
-max_new_tokens: 5000
+**max_new_tokens:** 5000
 
-temperature: 0.2
+**temperature:** 0.2
 
-top_p: 0.95
+**top_p:** 0.95
 
-top_k: 2
+**top_k:** 2
 
-presence_penalty: 1
+**presence_penalty:** 1
 
 # Output
 |>
@@ -283,7 +283,5 @@ Finally, we're using the AssertJ library to make our assertions more concise and
 
 # Run time and cost
 This model costs approximately $0.0013 to run on Replicate, but this varies depending on your inputs. It is also open source and you can run it on your own computer with Docker.
-
-To see how much you've spent, go to your dashboard.
 
 This model runs on Nvidia A40 (Large) GPU hardware, which costs $0.000725 per second. Predictions typically complete within 2 seconds.
