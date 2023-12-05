@@ -1,12 +1,12 @@
 # Zephyr7BJava
-Prompts and configuration for Zephyr7B model and Java code generation
+Prompts and configuration for Zephyr7B model and Java code generation.
 
 # tomasmcm / zephyr-7b-beta
-Source: HuggingFaceH4/zephyr-7b-beta – Zephyr is a series of language models that are trained to act as helpful assistants. Zephyr-7B-β is the second model in the series 
+**Source**: HuggingFaceH4/zephyr-7b-beta – Zephyr is a series of language models that are trained to act as helpful assistants. Zephyr-7B-β is the second model in the series 
 
-Version: 961cd666
+**Version**: 961cd666
 
-URL: https://replicate.com/tomasmcm/zephyr-7b-beta?input=form&output=preview
+**URL**: https://replicate.com/tomasmcm/zephyr-7b-beta?input=form&output=preview
 
 # Prompt
 <|im_start|>system
@@ -88,7 +88,7 @@ presence_penalty: 1
 
 # Output
 |>
-Here are some JUnit tests for the UserService class:
+Here are some JUnit tests for the **UserService** class:
 
 ````java
 import org.junit.jupiter.api.BeforeEach;
